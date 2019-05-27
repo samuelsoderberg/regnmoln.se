@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>regnmoln.se</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+
+  <body onload="getWallPosts()">
+    <section class="center">
+      <img alt="Regnmoln" src="regnmoln.png" />
+
+      <h1>The Wall</h1>
+
+      <input
+        type="text"
+        placeholder="Who...?"
+        class="center"
+        id="name"
+        maxlength="15"
+        onkeypress="keyPress(event);"
+      />
+      <br />
+      <input
+        type="text"
+        placeholder="What...?"
+        class="center"
+        id="text"
+        maxlength="50"
+        onkeypress="keyPress(event);"
+      />
+      <br />
+
+      <table id="wallPosts"></table>
+    </section>
+  </body>
+</html>

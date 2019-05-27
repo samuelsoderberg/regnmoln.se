@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "wetpaint";
+  src: url("wetpaint.ttf") format("truetype");
+}
+
+h1 {
+  font-family: wetpaint;
+}
+
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+  margin-left: auto;
+  margin-right: auto;
+
+  table-layout: fixed;
+  width: 100%;
+}
+
+table td {
+  padding: 0.625rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-right: dotted 0.0625rem gray;
+  border-left: dotted 0.0625rem gray;
+}
+
+table td:first-child {
+  text-align: right !important;
+}
+
+input[type="text"],
+select {
+  width: 15.625rem;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+  display: inline-block;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  background-color: grey !important;
+  color: white;
+}
+
+input[type="text"]:hover {
+  background-color: lightgrey;
+}
+
+input::placeholder {
+  font-family: wetpaint;
+}
+
+.center {
+  text-align: center;
+}
